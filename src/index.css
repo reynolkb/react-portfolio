@@ -1,0 +1,150 @@
+/* Applies to all */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #7f1eda;
+	--dark-primary: #6e1abc;
+}
+
+html {
+	background-color: white;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+section {
+	padding: 60px;
+}
+
+/* Mobile */
+@media screen and (max-width: 1440px) {
+	.section-text {
+		margin: 0;
+		padding: 10px;
+	}
+
+	.container {
+		border: solid var(--primary);
+		margin: 20px 0;
+	}
+
+	#testimonials {
+		margin: 0;
+	}
+
+	.quote,
+	.cite {
+		margin: 0;
+	}
+
+	.contact-container {
+		margin: 20px 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header nav ul li a {
+		margin: 0 25px 0 25px;
+		font-size: 2.5vw;
+		color: white;
+		font-weight: 300;
+	}
+
+	.btn:link,
+	.btn:visited {
+		width: 30%;
+	}
+
+	.hero {
+		height: 900px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-text-box {
+		font-size: 80%;
+	}
+
+	.section-text {
+		margin: 0;
+		font-size: 80%;
+	}
+
+	.project-text {
+		font-size: 80%;
+	}
+
+	#testimonials {
+		margin: 0;
+	}
+
+	.quote,
+	.cite {
+		margin: 0;
+	}
+
+	.cite {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact-list {
+		display: block;
+	}
+}
+
+/* Media screen formatting */
+@media screen and (max-width: 425px) {
+	header nav ul li a {
+		font-size: 5vw;
+		font-weight: 300;
+		margin: 0 20px 0 20px;
+		color: white;
+		padding: 0;
+	}
+
+	.hero {
+		background-size: cover;
+		background-position: center;
+		height: 900px;
+	}
+
+	.hero-text-box {
+		margin-top: 250px;
+	}
+
+	.hero-text-box h1 {
+		font-size: 150%;
+	}
+
+	.btn:link,
+	.btn:visited {
+		width: 60%;
+	}
+
+	.cite,
+	.quote {
+		font-size: 80%;
+	}
+
+	.contact-list {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.btn:link,
+	.btn:visited {
+		width: 70%;
+	}
+}
