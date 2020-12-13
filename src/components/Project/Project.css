@@ -1,0 +1,30 @@
+/* Portfolio Section */
+#projects {
+	margin: 20px;
+	position: relative;
+}
+
+.project-img {
+	height: auto;
+	width: 40vw;
+	display: block;
+	position: relative;
+}
+
+.github-img {
+	height: 25px;
+	width: 25px;
+	fill: white;
+}
+
+.image-container {
+	top: 50px;
+	left: 25px;
+	position: absolute;
+}
+
+.project-name {
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+}

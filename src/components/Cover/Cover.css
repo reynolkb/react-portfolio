@@ -10,9 +10,12 @@
 }
 
 .cover-text-box {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	margin-top: 300px;
+	justify-content: center; */
+	margin: 300px auto;
+	width: 45%;
 }
 
 .cover-text-box h1 {
@@ -37,7 +40,7 @@
 	border: 1px solid var(--primary);
 	color: #fff;
 	margin-right: 15px;
-	width: 28%;
+	width: 12%;
 }
 
 .btn:hover {

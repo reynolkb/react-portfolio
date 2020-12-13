@@ -1,21 +1,43 @@
-import './index.css';
+import React, { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Cover from './components/Cover/Cover';
 import About from './components/About/About';
-// import MetaTags from 'react-meta-tags';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
-	return (
-		<div className='App'>
-			{/* <MetaTags>
-      <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-      </MetaTags> */}
-			<Navigation></Navigation>
-			<Cover></Cover>
-			<About></About>
-		</div>
-	);
+	const pages = ['homepage', 'about', 'project', 'contact', 'resume'];
+	const [activePage, setActivePage] = useState(pages[0]);
+
+	if (activePage === 'about' || activePage === 'homepage') {
+		return (
+			<div className='App'>
+				<Navigation
+					pages={pages}
+					activePage={activePage}
+					setActivePage={
+						setActivePage
+					}></Navigation>
+				<main>
+					<Cover></Cover>
+					<About></About>
+				</main>
+			</div>
+		);
+	} else if (activePage === 'project') {
+		return (
+			<div className='App'>
+				<Navigation
+					pages={pages}
+					activePage={activePage}
+					setActivePage={
+						setActivePage
+					}></Navigation>
+				<main>
+					<Portfolio></Portfolio>
+				</main>
+			</div>
+		);
+	}
 }
 
 export default App;

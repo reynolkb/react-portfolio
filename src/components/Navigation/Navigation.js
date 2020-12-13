@@ -1,28 +1,67 @@
 import React from 'react';
-import '../../index.css';
 import './Navigation.css';
 
-function Navigation() {
+function Navigation(props) {
+	const { pages = [], activePage, setActivePage } = props;
+
 	return (
 		<header>
 			<nav>
-				<ul class='main-nav'>
-					<li>
-						<a href='#home'>Home</a>
+				<ul className='main-nav'>
+					<li
+						className={`${
+							activePage ===
+								'homepage' &&
+							'nav-active'
+						}`}>
+						<span
+							onClick={() =>
+								setActivePage(
+									'homepage'
+								)
+							}>
+							<a href='#'>
+								Kyle's Portfolio
+							</a>
+						</span>
 					</li>
-					<li>
-						<a href='#about'>About Me</a>
+					<li
+						className={`${
+							activePage ===
+								'about' &&
+							'nav-active'
+						}`}>
+						<span
+							onClick={() =>
+								setActivePage(
+									'about'
+								)
+							}>
+							<a href='#about'>
+								About Me
+							</a>
+						</span>
 					</li>
-					<li>
-						<a href='#portfolio'>
+					<li
+						className={`${
+							activePage ===
+								'project' &&
+							'nav-active'
+						}`}>
+						<span
+							onClick={() =>
+								setActivePage(
+									'project'
+								)
+							}>
 							Portfolio
-						</a>
+						</span>
 					</li>
 					<li>
-						<a href='#contact'>Contact</a>
+						<span>Contact</span>
 					</li>
 					<li>
-						<a href='#resume'>Resume</a>
+						<span>Resume</span>
 					</li>
 				</ul>
 			</nav>

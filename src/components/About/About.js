@@ -1,17 +1,17 @@
 import React from 'react';
-import '../../index.css';
 import './About.css';
+import headshot from '../../assets/images/headshot.jpg';
 
 function About() {
 	return (
 		<section id='about'>
-			<h2 class='section-title'>About Me</h2>
+			<h2 className='section-title'>About Me</h2>
 			<img
-				src='../../assets/images/headshot.jpg'
+				src={headshot}
 				alt='Headshot'
-				class='headshot'
+				className='headshot'
 			/>
-			<h4 class='section-text'>
+			<h4 className='section-text'>
 				Full Stack Web Developer with over 5 years of
 				experience with SaaS applications.
 				<br />
