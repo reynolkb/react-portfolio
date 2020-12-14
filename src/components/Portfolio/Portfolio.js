@@ -7,7 +7,7 @@ import cityExplorer from '../../assets/images/city-explorer.png';
 
 function Portfolio(props) {
 	return (
-		<div className='flex-display'>
+		<div className='portfolio-container'>
 			<Project
 				name='Todo List'
 				githubLink='https://github.com/reynolkb/react-todo-app'

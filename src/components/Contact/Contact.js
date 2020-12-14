@@ -51,7 +51,7 @@ function ContactForm() {
 						name='name'
 						defaultValue={name}
 						onBlur={handleChange}
-						class='contact-form-input'
+						className='contact-form-input'
 					/>
 				</div>
 				<div className='contact-form-item'>
@@ -64,7 +64,7 @@ function ContactForm() {
 						name='email'
 						defaultValue={email}
 						onBlur={handleChange}
-						class='contact-form-input'
+						className='contact-form-input'
 					/>
 				</div>
 				<div className='contact-form-item'>
@@ -77,7 +77,7 @@ function ContactForm() {
 						rows='5'
 						defaultValue={message}
 						onBlur={handleChange}
-						class='contact-form-input'
+						className='contact-form-input'
 					/>
 				</div>
 				{errorMessage && (

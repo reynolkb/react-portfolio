@@ -1,0 +1,14 @@
+footer {
+	padding: 10px 0;
+	background-color: black;
+}
+
+.footer-li {
+	margin-left: 20%;
+	display: inline-block;
+}
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+}

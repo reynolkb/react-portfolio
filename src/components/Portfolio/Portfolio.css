@@ -1,5 +1,6 @@
-.flex-display {
+.portfolio-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	height: 90.5vh;
 }

@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import ContactForm from './components/Contact/Contact';
 import Resume from './components/Resume/Resume';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	const pages = ['homepage', 'about', 'project', 'contact', 'resume'];
@@ -23,6 +24,7 @@ function App() {
 					<Cover></Cover>
 					<About></About>
 				</main>
+				<Footer></Footer>
 			</div>
 		);
 	} else if (activePage === 'project') {
@@ -37,6 +39,7 @@ function App() {
 				<main>
 					<Portfolio></Portfolio>
 				</main>
+				<Footer></Footer>
 			</div>
 		);
 	} else if (activePage === 'contact') {
@@ -51,6 +54,7 @@ function App() {
 				<main>
 					<ContactForm></ContactForm>
 				</main>
+				<Footer></Footer>
 			</div>
 		);
 	} else if (activePage === 'resume') {
@@ -65,6 +69,7 @@ function App() {
 				<main>
 					<Resume></Resume>
 				</main>
+				<Footer></Footer>
 			</div>
 		);
 	}
