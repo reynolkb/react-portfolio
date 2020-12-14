@@ -26,7 +26,7 @@ section {
 }
 
 /* Mobile */
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
 	.section-text {
 		margin: 0;
 		padding: 10px;
@@ -49,57 +49,65 @@ section {
 	.contact-container {
 		margin: 20px 0;
 	}
-}
+} */
 
 @media screen and (max-width: 1024px) {
 	header nav ul li a {
-		margin: 0 25px 0 25px;
+		margin: 0 10px 0 10px;
 		font-size: 2.5vw;
 		color: white;
 		font-weight: 300;
 	}
 
-	.btn:link,
-	.btn:visited {
-		width: 30%;
-	}
-
-	.hero {
-		height: 900px;
-		background-size: cover;
-		background-position: center;
-	}
-
-	.hero-text-box {
-		font-size: 80%;
+	header nav ul li span {
+		margin: 0 10px 0 10px !important;
+		font-size: 2.5vw !important;
+		color: white !important;
+		font-weight: 300 !important;
 	}
 
 	.section-text {
-		margin: 0;
-		font-size: 80%;
+		margin: 80px !important;
+		font-size: 80% !important;
 	}
 
-	.project-text {
-		font-size: 80%;
-	}
-
-	#testimonials {
-		margin: 0;
-	}
-
-	.quote,
-	.cite {
-		margin: 0;
-	}
-
-	.cite {
-		font-size: 80%;
+	.btn {
+		width: 20% !important;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.contact-list {
-		display: block;
+	header nav ul li a {
+		margin: 0 5px 0 5px;
+		font-size: 2.5vw;
+		color: white;
+		font-weight: 300;
+	}
+
+	header nav ul li span {
+		margin: 0 5px 0 5px !important;
+		font-size: 2.5vw !important;
+		color: white !important;
+		font-weight: 300 !important;
+	}
+
+	.cover-text-box h1 {
+		font-size: 180% !important;
+	}
+
+	.image-container {
+		top: 10px !important;
+		left: 10px !important;
+		position: absolute !important;
+		font-size: 65% !important;
+	}
+
+	.contact-form-input {
+		width: 50% !important;
+	}
+
+	.btn {
+		width: 27% !important;
 	}
 }
 
@@ -108,43 +116,47 @@ section {
 	header nav ul li a {
 		font-size: 5vw;
 		font-weight: 300;
-		margin: 0 20px 0 20px;
+		margin: 0;
 		color: white;
 		padding: 0;
 	}
 
-	.hero {
-		background-size: cover;
-		background-position: center;
-		height: 900px;
+	header nav ul li span {
+		font-size: 5vw !important;
+		font-weight: 300 !important;
+		margin: 0 !important;
+		color: white !important;
+		padding: 0 !important;
 	}
 
-	.hero-text-box {
-		margin-top: 250px;
+	.cover-text-box h1 {
+		font-size: 150% !important;
 	}
 
-	.hero-text-box h1 {
-		font-size: 150%;
+	.cover-text-box {
+		width: 100% !important;
 	}
 
-	.btn:link,
-	.btn:visited {
-		width: 60%;
+	.section-text {
+		margin: 0px !important;
 	}
 
-	.cite,
-	.quote {
-		font-size: 80%;
+	.flex-display {
+		display: block !important;
 	}
 
-	.contact-list {
-		display: block;
+	.project-img {
+		width: 90vw !important;
+	}
+
+	#contact-form {
+		width: 100vw !important;
+	}
+
+	.resume-container {
+		width: 100vw !important;
 	}
 }
 
 @media screen and (max-width: 375px) {
-	.btn:link,
-	.btn:visited {
-		width: 70%;
-	}
 }

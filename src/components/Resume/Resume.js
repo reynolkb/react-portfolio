@@ -7,7 +7,7 @@ function Resume() {
 			<div className='resume-container'>
 				<h1>Resume</h1>
 				<p>
-					Download my{' '}
+					Download my<span> </span>
 					<a
 						href='https://drive.google.com/file/d/1a9TF31Uu2Dh-H-AzXheemv6L6ly2CusH/view?usp=sharing'
 						target='_blank'>
