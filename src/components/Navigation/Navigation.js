@@ -72,8 +72,20 @@ function Navigation(props) {
 							Contact
 						</span>
 					</li>
-					<li>
-						<span>Resume</span>
+					<li
+						className={`${
+							activePage ===
+								'resume' &&
+							'nav-active'
+						}`}>
+						<span
+							onClick={() =>
+								setActivePage(
+									'resume'
+								)
+							}>
+							Resume
+						</span>
 					</li>
 				</ul>
 			</nav>

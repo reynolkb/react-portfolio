@@ -16,3 +16,23 @@
 .contact-form-input {
 	width: 25%;
 }
+
+.btn:link,
+.btn:visited {
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	color: #fff;
+	margin-right: 15px;
+	width: 12%;
+}
+
+.btn:hover {
+	background-color: #6e1abc;
+	border: 1px solid white;
+	color: white;
+}
