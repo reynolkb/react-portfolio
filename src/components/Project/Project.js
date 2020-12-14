@@ -1,6 +1,5 @@
 import React from 'react';
 import './Project.css';
-import Cover from '../Cover/Cover';
 
 function Project(props) {
 	const { name, githubLink, deployedLink, projectImage } = props;

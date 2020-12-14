@@ -3,6 +3,7 @@ import Navigation from './components/Navigation/Navigation';
 import Cover from './components/Cover/Cover';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import ContactForm from './components/Contact/Contact';
 
 function App() {
 	const pages = ['homepage', 'about', 'project', 'contact', 'resume'];
@@ -34,6 +35,20 @@ function App() {
 					}></Navigation>
 				<main>
 					<Portfolio></Portfolio>
+				</main>
+			</div>
+		);
+	} else if (activePage === 'contact') {
+		return (
+			<div className='App'>
+				<Navigation
+					pages={pages}
+					activePage={activePage}
+					setActivePage={
+						setActivePage
+					}></Navigation>
+				<main>
+					<ContactForm></ContactForm>
 				</main>
 			</div>
 		);
