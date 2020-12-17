@@ -90,7 +90,8 @@ function ContactForm() {
 				<button
 					data-testid='button'
 					type='submit'
-					className='contact-form-item btn'>
+					className='contact-form-item'
+					id='btn'>
 					Submit
 				</button>
 			</form>

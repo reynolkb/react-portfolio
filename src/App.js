@@ -11,68 +11,33 @@ function App() {
 	const pages = ['homepage', 'about', 'project', 'contact', 'resume'];
 	const [activePage, setActivePage] = useState(pages[0]);
 
-	if (activePage === 'about' || activePage === 'homepage') {
-		return (
-			<div className='App'>
-				<Navigation
-					pages={pages}
-					activePage={activePage}
-					setActivePage={
-						setActivePage
-					}></Navigation>
-				<main>
+	function conditionalNav() {
+		if (activePage === 'about' || activePage === 'homepage') {
+			return (
+				<>
 					<Cover></Cover>
 					<About></About>
-				</main>
-				<Footer></Footer>
-			</div>
-		);
-	} else if (activePage === 'project') {
-		return (
-			<div className='App'>
-				<Navigation
-					pages={pages}
-					activePage={activePage}
-					setActivePage={
-						setActivePage
-					}></Navigation>
-				<main>
-					<Portfolio></Portfolio>
-				</main>
-				<Footer></Footer>
-			</div>
-		);
-	} else if (activePage === 'contact') {
-		return (
-			<div className='App'>
-				<Navigation
-					pages={pages}
-					activePage={activePage}
-					setActivePage={
-						setActivePage
-					}></Navigation>
-				<main>
-					<ContactForm></ContactForm>
-				</main>
-				<Footer></Footer>
-			</div>
-		);
-	} else if (activePage === 'resume') {
-		return (
-			<div className='App'>
-				<Navigation
-					pages={pages}
-					activePage={activePage}
-					setActivePage={
-						setActivePage
-					}></Navigation>
-				<main>
-					<Resume></Resume>
-				</main>
-				<Footer></Footer>
-			</div>
-		);
+				</>
+			);
+		} else if (activePage === 'project') {
+			return <Portfolio></Portfolio>;
+		} else if (activePage === 'contact') {
+			return <ContactForm></ContactForm>;
+		} else if (activePage === 'resume') {
+			return <Resume></Resume>;
+		}
 	}
+
+	return (
+		<div className='App'>
+			<Navigation
+				pages={pages}
+				activePage={activePage}
+				setActivePage={setActivePage}></Navigation>
+			<main>{conditionalNav()}</main>
+			<Footer></Footer>
+		</div>
+	);
 }
 
 export default App;
