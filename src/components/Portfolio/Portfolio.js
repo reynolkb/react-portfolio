@@ -2,7 +2,7 @@ import React from 'react';
 import './Portfolio.css';
 import Project from '../Project/Project';
 import activelyDistanced from '../../assets/images/actively-distanced.png';
-import reactTodoApp from '../../assets/images/react-todo-app.png';
+import colorTheory from '../../assets/images/color-theory.png';
 import cityExplorer from '../../assets/images/city-explorer.png';
 import weatherDashboard from '../../assets/images/weather-dashboard.png';
 import noteTaker from '../../assets/images/note-taker.png';
@@ -12,10 +12,10 @@ function Portfolio(props) {
 	return (
 		<div className='portfolio-container'>
 			<Project
-				name='Todo List'
-				githubLink='https://github.com/reynolkb/react-todo-app'
-				deployedLink='https://reynolkb.github.io/react-todo-app/'
-				projectImage={reactTodoApp}></Project>
+				name='Color Theory'
+				githubLink='https://github.com/reynolkb/color-theory-1.0'
+				deployedLink='https://color-theory.herokuapp.com/'
+				projectImage={colorTheory}></Project>
 			<Project
 				name='City Explorer'
 				githubLink='https://github.com/reynolkb/city-explorer'
